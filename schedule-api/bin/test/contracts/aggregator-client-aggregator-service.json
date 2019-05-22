@@ -1,0 +1,39 @@
+{
+  "consumer": {
+    "name": "aggregator-client"
+  },
+  "provider": {
+    "name": "aggregator-service"
+  },
+  "interactions": [
+    {
+      "description": "a request for tuturu",
+      "providerState": "i have some state",
+      "request": {
+        "method": "GET",
+        "path": "/foo/bar",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": 1,
+          "value": "tratata"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.6.7"
+    }
+  }
+}

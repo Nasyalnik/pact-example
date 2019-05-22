@@ -1,0 +1,44 @@
+{
+  "consumer": {
+    "name": "aggregator-client"
+  },
+  "provider": {
+    "name": "aggregator-service"
+  },
+  "interactions": [
+    {
+      "description": "a request for schedule",
+      "request": {
+        "method": "GET",
+        "path": "/schedule",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "talks": [
+            {
+              "title": "Изготовление качественных шерстяных изделий в условиях невесомости",
+              "speakers": [
+                {
+                  "name": "Фубар Базов"
+                }
+              ],
+              "time": "2019-05-27T12:00:00+03:00"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

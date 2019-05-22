@@ -1,0 +1,65 @@
+I, [2019-05-22T08:34:28.678912 #31705]  INFO -- : Registered expected interaction GET /schedule
+D, [2019-05-22T08:34:28.679152 #31705] DEBUG -- : {
+  "description": "a request for schedule",
+  "request": {
+    "method": "GET",
+    "path": "/schedule",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "body": {
+      "talks": [
+        {
+          "title": "Изготовление качественных шерстяных изделий в условиях невесомости",
+          "speakers": [
+            {
+              "name": "Фубар Базов"
+            }
+          ],
+          "time": "2019-05-27T12:00:00+03:00"
+        }
+      ]
+    }
+  }
+}
+I, [2019-05-22T08:34:28.687187 #31705]  INFO -- : Received request GET /schedule
+D, [2019-05-22T08:34:28.687280 #31705] DEBUG -- : {
+  "path": "/schedule",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)",
+    "Accept-Encoding": "gzip,deflate",
+    "Connection": "close",
+    "Host": "localhost:21234",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2019-05-22T08:34:28.687444 #31705]  INFO -- : Found matching response for GET /schedule
+D, [2019-05-22T08:34:28.687523 #31705] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8"
+  },
+  "body": {
+    "talks": [
+      {
+        "title": "Изготовление качественных шерстяных изделий в условиях невесомости",
+        "speakers": [
+          {
+            "name": "Фубар Базов"
+          }
+        ],
+        "time": "2019-05-27T12:00:00+03:00"
+      }
+    ]
+  }
+}
+I, [2019-05-22T08:34:28.695453 #31705]  INFO -- : Writing pact for aggregator-service to /Users/stereohorse/work/proj/sandbox/pact-example/schedule-client/pacts/aggregator-client-aggregator-service.json
